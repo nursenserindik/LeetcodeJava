@@ -1,7 +1,7 @@
 package easy;
 
 public class PalindromeNumber {
-    public boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int x) {
         if (x < 0) return false;
 
         int original = x;
@@ -13,5 +13,11 @@ public class PalindromeNumber {
             x = x / 10;
         }
         return original == reversed;
+    }
+    public static void main(String[] args) {
+        int number = 121;
+
+        boolean result = isPalindrome(number);
+        System.out.println("Is " + number + " a palindrome? " + result);
     }
 }
