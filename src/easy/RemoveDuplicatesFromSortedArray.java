@@ -12,13 +12,10 @@ public class RemoveDuplicatesFromSortedArray {
             System.out.print(nums[i] + " ");
         }
     }
-
     public static int removeDuplicates(int[] nums) {
-        // Eğer dizi boşsa hemen çık
         if (nums.length == 0) {
             return 0;
         }
-
         int k = 1;
 
         for (int i = 0; i < nums.length; i++) {
@@ -27,7 +24,6 @@ public class RemoveDuplicatesFromSortedArray {
                 k++;
             }
         }
-
         return k;
     }
 }
